@@ -39,8 +39,8 @@ if ingredients_list:
         st.success("""Your Smoothie ordered is """+name_of_order+""" !""", icon="✅")
 
 import requests  
-smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")  
-#st.text(smoothiefroot_response)
+smoothiefruit_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")  
+#st.text(smoothiefruit_response)
 sf_df = st.dataframe(data=smoothiefruit_response.json(),use_container_width=True)
 
     
